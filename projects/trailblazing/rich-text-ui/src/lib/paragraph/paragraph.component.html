@@ -1,0 +1,18 @@
+<ng-container *ngIf="chunks">
+  <div class="nt-paragraph">
+    <ng-container *ngFor="let chunk of chunks; let start = first; let end = last;">
+      <div class="nt-break" *ngIf="chunk.type === 'display' && chunk.math"></div>
+      <div [ngClass]="{'nt-display-expression': chunk.type === 'display'}">
+        <span *ngIf="!chunk.math">{{ chunk.raw }}</span>
+        <nt-expression [ngClass]="{
+                           'nt-chunk': chunk.type !== 'display',
+                           'nt-start-chunk': start,
+                           'nt-end-chunk': end
+                       }"
+                       [options]="{ displayMode: chunk.type === 'display' }"
+                       *ngIf="chunk.math;" [content]="chunk.raw"></nt-expression>
+      </div>
+      <div class="nt-break" *ngIf="chunk.type === 'display' && chunk.math"></div>
+    </ng-container>
+  </div>
+</ng-container>
