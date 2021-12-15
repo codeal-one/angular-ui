@@ -3,7 +3,7 @@ import { moduleMetadata } from "@storybook/angular";
 import { KatexDirective, ExpressionComponent } from "@trailblazing/rich-text-ui";
 
 export default {
-  title: 'Trailblazing/Expression',
+  title: '@Trailblazing/RichText/Expression',
   component: ExpressionComponent,
   argTypes: {
     debug: {
