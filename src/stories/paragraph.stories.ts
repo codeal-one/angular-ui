@@ -8,7 +8,6 @@ export default {
   title: 'Trailblazing/Paragraph',
   component: ParagraphComponent,
   argTypes: {
-    backgroundColor: { control: 'color' },
   },
   decorators: [
     moduleMetadata({
@@ -23,7 +22,20 @@ const Template: Story<ParagraphComponent> = (args: ParagraphComponent) => ({
 
 export const WithInlineExpression = Template.bind({});
 WithInlineExpression.args = {
-  content: 'This is an inline expression: \\Delta = b^2 - 4ac'
+  content: 'This is an inline expression: $\\Delta = b^2 - 4ac$. It works!'
 };
 
+export const WithLeadingExpression = Template.bind({});
+WithLeadingExpression.args = {
+  content: '$\\Delta = b^2 - 4ac$ is leading the paragraph.'
+};
 
+export const WithEndingExpression = Template.bind({});
+WithEndingExpression.args = {
+  content: 'Let put the expression at the end $\\Delta = b^2 - 4ac$'
+};
+
+export const WithDisplayExpression = Template.bind({});
+WithDisplayExpression.args = {
+  content: 'This is an expression in display mode: $$\\Delta = b^2 - 4ac\\tag{2.2}$$ and more text here.'
+};

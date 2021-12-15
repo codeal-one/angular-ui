@@ -1,27 +1,2 @@
-
 .nt-paragraph {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-}
-
-.nt-chunk {
-  margin-left: 8px;
-}
-
-.nt-start-chunk {
-  margin-left: 0;
-}
-
-.nt-end-chunk {
-  margin-right: 0;
-}
-
-.nt-display-expression {
-  flex: 1;
-}
-
-.nt-break {
-  flex-basis: 100%;
-  height: 0;
 }
