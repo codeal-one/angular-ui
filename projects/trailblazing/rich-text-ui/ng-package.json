@@ -4,6 +4,7 @@
   "allowedNonPeerDependencies": [
     "katex",
     "extract-math",
+    "marked",
     "tslib"
   ],
   "lib": {
