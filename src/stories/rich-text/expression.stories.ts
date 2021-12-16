@@ -1,6 +1,10 @@
-import { Story, Meta } from '@storybook/angular/types-6-0';
 import { moduleMetadata } from "@storybook/angular";
-import { KatexDirective, ExpressionComponent } from "@trailblazing/rich-text-ui";
+import { CommonModule } from "@angular/common";
+
+import { Story, Meta } from '@storybook/angular/types-6-0';
+import { KatexDirective } from "@trailblazing/rich-text-ui";
+import { ExpressionComponent } from "@trailblazing/rich-text-ui/src/lib/expression/expression.component";
+
 
 export default {
   title: '@Trailblazing/RichText/Expression',
@@ -12,7 +16,8 @@ export default {
   },
   decorators: [
     moduleMetadata({
-      declarations: [ExpressionComponent, KatexDirective]
+      declarations: [ExpressionComponent, KatexDirective],
+      imports: [CommonModule]
     })
   ]
 } as Meta;
