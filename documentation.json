@@ -4,7 +4,7 @@
     "injectables": [
         {
             "name": "KatexService",
-            "id": "injectable-KatexService-13b63560edf7e914f8dfb967c6dde7f55a84741d4b4d7451c3d968f485ae6b35b7da0377e8c2d3cbe898c8e1e5d3a0d19272a6a6fb0410e3efafd8fba6bf23db",
+            "id": "injectable-KatexService-e3b849dbeb300494f9239d2ccad82eab323c73b753d74266237db0c224cfe3013e92fc3f84554cc43c66cd34888e04a013633a1cc293cbc88ff9b0bfd3eea5be",
             "file": "projects/trailblazing/rich-text-ui/src/lib/services/katex.service.ts",
             "properties": [],
             "methods": [
@@ -34,36 +34,149 @@
                     "optional": false,
                     "returnType": "any",
                     "typeParameters": [],
-                    "line": 8,
+                    "line": 17,
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "rawdescription": "\n\nRender an expression string into an HTML element\n",
+                    "description": "<p>Render an expression string into an HTML element</p>\n",
                     "jsdoctags": [
                         {
-                            "name": "expression",
+                            "name": {
+                                "pos": 373,
+                                "end": 383,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "expression"
+                            },
                             "type": "string",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
-                                "text": "param"
+                                "pos": 358,
+                                "end": 363,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>the raw content to be rendered</p>\n",
+                            "typeExpression": {
+                                "pos": 364,
+                                "end": 372,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 365,
+                                    "end": 371,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 149
+                                }
                             }
                         },
                         {
-                            "name": "element",
+                            "name": {
+                                "pos": 440,
+                                "end": 447,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "element"
+                            },
                             "type": "ElementRef",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
-                                "text": "param"
+                                "pos": 421,
+                                "end": 426,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>the target element of the rendering</p>\n",
+                            "typeExpression": {
+                                "pos": 427,
+                                "end": 439,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 428,
+                                    "end": 438,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 428,
+                                        "end": 438,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "ElementRef"
+                                    }
+                                }
                             }
                         },
                         {
-                            "name": "options",
+                            "name": {
+                                "pos": 511,
+                                "end": 518,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "options"
+                            },
                             "type": "KatexOptions",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "optional": true,
                             "tagName": {
-                                "text": "param"
+                                "pos": 490,
+                                "end": 495,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>further options for the rendering process</p>\n",
+                            "typeExpression": {
+                                "pos": 496,
+                                "end": 510,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 497,
+                                    "end": 509,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 497,
+                                        "end": 509,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "KatexOptions"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -86,39 +199,126 @@
                         }
                     ],
                     "optional": false,
-                    "returnType": "any",
+                    "returnType": "string",
                     "typeParameters": [],
-                    "line": 12,
+                    "line": 27,
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "rawdescription": "\n\nRender an expression string to an HTML string\n",
+                    "description": "<p>Render an expression string to an HTML string</p>\n",
                     "jsdoctags": [
                         {
-                            "name": "expression",
+                            "name": {
+                                "pos": 794,
+                                "end": 804,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "expression"
+                            },
                             "type": "string",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
-                                "text": "param"
+                                "pos": 779,
+                                "end": 784,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>the raw content to be rendered</p>\n",
+                            "typeExpression": {
+                                "pos": 785,
+                                "end": 793,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 786,
+                                    "end": 792,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 149
+                                }
                             }
                         },
                         {
-                            "name": "options",
+                            "name": {
+                                "pos": 863,
+                                "end": 870,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "options"
+                            },
                             "type": "KatexOptions",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "optional": true,
                             "tagName": {
-                                "text": "param"
+                                "pos": 842,
+                                "end": 847,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>further options for the rendering process</p>\n",
+                            "typeExpression": {
+                                "pos": 848,
+                                "end": 862,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 307,
+                                "type": {
+                                    "pos": 849,
+                                    "end": 861,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 1,
+                                    "kind": 177,
+                                    "typeName": {
+                                        "pos": 849,
+                                        "end": 861,
+                                        "flags": 4194304,
+                                        "modifierFlagsCache": 0,
+                                        "transformFlags": 0,
+                                        "kind": 79,
+                                        "escapedText": "KatexOptions"
+                                    }
+                                }
                             }
+                        },
+                        {
+                            "tagName": {
+                                "pos": 919,
+                                "end": 925,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "originalKeywordKind": 105,
+                                "escapedText": "return"
+                            },
+                            "comment": "<p>result of the rendering</p>\n",
+                            "returnType": "string"
                         }
                     ]
                 }
             ],
             "deprecated": false,
             "deprecationMessage": "",
-            "description": "",
-            "rawdescription": "\n",
-            "sourceCode": "import { ElementRef, Injectable } from '@angular/core';\nimport { render as katexRender, renderToString as katexRenderToString, KatexOptions } from 'katex';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class KatexService {\n  render(expression: string, element: ElementRef, options?: KatexOptions) {\n    return katexRender(expression, element.nativeElement, options);\n  }\n\n  renderToString(expression: string, options?: KatexOptions) {\n    return katexRenderToString(expression, options);\n  }\n}\n",
+            "description": "<p>An Angular service wrapping the Katex rendering functions</p>\n",
+            "rawdescription": "\n\nAn Angular service wrapping the Katex rendering functions\n",
+            "sourceCode": "import { ElementRef, Injectable } from '@angular/core';\nimport { render as katexRender, renderToString as katexRenderToString, KatexOptions } from 'katex';\n\n/**\n * An Angular service wrapping the Katex rendering functions\n */\n@Injectable({\n  providedIn: 'root'\n})\nexport class KatexService {\n  /**\n   * Render an expression string into an HTML element\n   * @param {string} expression the raw content to be rendered\n   * @param {ElementRef} element the target element of the rendering\n   * @param {KatexOptions} options further options for the rendering process\n   */\n  render(expression: string, element: ElementRef, options?: KatexOptions) {\n    return katexRender(expression, element.nativeElement, options);\n  }\n\n  /**\n   * Render an expression string to an HTML string\n   * @param {string} expression the raw content to be rendered\n   * @param {KatexOptions} options further options for the rendering process\n   * @return {string} result of the rendering\n   */\n  renderToString(expression: string, options?: KatexOptions): string {\n    return katexRenderToString(expression, options);\n  }\n}\n",
             "type": "injectable"
         }
     ],
@@ -128,12 +328,12 @@
     "directives": [
         {
             "name": "KatexDirective",
-            "id": "directive-KatexDirective-8b6843f92513af2173f3737f54a3544dd109d1583fe9f9360fe0aeac027b10da3d050b56bf202386241d578c23ab56b9625c14a0c6d511ac23227388674efe23",
+            "id": "directive-KatexDirective-403accef3cb4f2764c4f172a8a22c59008d1c856a8acfe6e926bda78edf784602500920b61088911845f434d6ceda3b5379611e4d0d01a0fcde51409231bd5cd",
             "file": "projects/trailblazing/rich-text-ui/src/lib/directives/katex.directive.ts",
             "type": "directive",
             "description": "",
             "rawdescription": "\n",
-            "sourceCode": "import { Directive, EventEmitter, Input, Output, ElementRef, OnChanges } from '@angular/core';\nimport { KatexOptions } from 'katex';\nimport { KatexService } from \"../services/katex.service\";\n\n@Directive({\n  selector: '[katex]',\n})\nexport class KatexDirective implements OnChanges {\n\n  private defaultOptions: KatexOptions = { output: 'html' };\n  @Input() expression: string = '';\n  @Input() options?: any = undefined;\n  @Input() debug: boolean = false;\n  @Output() error = new EventEmitter<any>();\n\n  constructor(private el: ElementRef, private service: KatexService) { }\n\n  ngOnChanges() {\n    try {\n      this.el.nativeElement.classList.remove('has-error');\n      this.service.render(this.expression, this.el, {...this.defaultOptions, ...this.options});\n    } catch (err: any) {\n      if (this.debug) {\n        this.el.nativeElement.classList.add('has-error');\n        this.el.nativeElement.innerText = err.toString();\n      }\n      this.error.emit(err);\n    }\n  }\n}\n",
+            "sourceCode": "import { Directive, EventEmitter, Input, Output, ElementRef, OnChanges } from '@angular/core';\nimport { KatexOptions } from 'katex';\nimport { KatexService } from \"../services/katex.service\";\n\n@Directive({\n  selector: '[katex]',\n})\nexport class KatexDirective implements OnChanges {\n\n  /**\n   * The default options for the rendering\n   * @private\n   */\n  private defaultOptions: KatexOptions = { output: 'html' };\n\n  /**\n   * The raw content of the expression\n   */\n  @Input() expression: string = '';\n\n  /**\n   * The additional options for the rendering\n   */\n  @Input() options?: any = undefined;\n\n  /**\n   * Enable the debug mode in which errors will be rendered directly to the destination\n   */\n  @Input() debug: boolean = false;\n\n  /**\n   * The event that will be emitted to the parent component in case of errors\n   */\n  @Output() error = new EventEmitter<any>();\n\n  /**\n   *\n   * @param {ElementRef} el the target element (injected)\n   * @param {KatexService} service the katex service (injected)\n   */\n  constructor(private el: ElementRef, private service: KatexService) { }\n\n  /**\n   * The internal processing on changes\n   */\n  ngOnChanges() {\n    try {\n      this.el.nativeElement.classList.remove('has-error');\n      this.service.render(this.expression, this.el, {...this.defaultOptions, ...this.options});\n    } catch (err: any) {\n      if (this.debug) {\n        this.el.nativeElement.classList.add('has-error');\n        this.el.nativeElement.innerText = err.toString();\n      }\n      this.error.emit(err);\n    }\n  }\n}\n",
             "selector": "[katex]",
             "providers": [],
             "inputsClass": [
@@ -142,7 +342,9 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "rawdescription": "\n\nEnable the debug mode in which errors will be rendered directly to the destination\n",
+                    "description": "<p>Enable the debug mode in which errors will be rendered directly to the destination</p>\n",
+                    "line": 29,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -151,7 +353,9 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "rawdescription": "\n\nThe raw content of the expression\n",
+                    "description": "<p>The raw content of the expression</p>\n",
+                    "line": 19,
                     "type": "string",
                     "decorators": []
                 },
@@ -160,7 +364,9 @@
                     "defaultValue": "undefined",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "rawdescription": "\n\nThe additional options for the rendering\n",
+                    "description": "<p>The additional options for the rendering</p>\n",
+                    "line": 24,
                     "type": "any",
                     "decorators": []
                 }
@@ -171,7 +377,9 @@
                     "defaultValue": "new EventEmitter<any>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "rawdescription": "\n\nThe event that will be emitted to the parent component in case of errors\n",
+                    "description": "<p>The event that will be emitted to the parent component in case of errors</p>\n",
+                    "line": 34,
                     "type": "EventEmitter"
                 }
             ],
@@ -187,10 +395,32 @@
                     "deprecationMessage": "",
                     "type": "KatexOptions",
                     "optional": false,
-                    "description": "",
-                    "line": 10,
+                    "description": "<p>The default options for the rendering</p>\n",
+                    "line": 14,
+                    "rawdescription": "\n\nThe default options for the rendering\n",
                     "modifierKind": [
                         121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "pos": 337,
+                            "end": 349,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 332,
+                            "tagName": {
+                                "pos": 338,
+                                "end": 345,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "originalKeywordKind": 121,
+                                "escapedText": "private"
+                            },
+                            "comment": ""
+                        }
                     ]
                 }
             ],
@@ -201,9 +431,11 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 18,
+                    "line": 46,
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nThe internal processing on changes\n",
+                    "description": "<p>The internal processing on changes</p>\n"
                 }
             ],
             "implements": [
@@ -228,24 +460,105 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 14,
+                "line": 34,
+                "rawdescription": "\n\n\n",
                 "jsdoctags": [
                     {
-                        "name": "el",
+                        "name": {
+                            "pos": 907,
+                            "end": 909,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 79,
+                            "escapedText": "el"
+                        },
                         "type": "ElementRef",
                         "deprecated": false,
                         "deprecationMessage": "",
                         "tagName": {
-                            "text": "param"
+                            "pos": 888,
+                            "end": 893,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 79,
+                            "escapedText": "param"
+                        },
+                        "comment": "<p>the target element (injected)</p>\n",
+                        "typeExpression": {
+                            "pos": 894,
+                            "end": 906,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 307,
+                            "type": {
+                                "pos": 895,
+                                "end": 905,
+                                "flags": 4194304,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 1,
+                                "kind": 177,
+                                "typeName": {
+                                    "pos": 895,
+                                    "end": 905,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "ElementRef"
+                                }
+                            }
                         }
                     },
                     {
-                        "name": "service",
+                        "name": {
+                            "pos": 967,
+                            "end": 974,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 79,
+                            "escapedText": "service"
+                        },
                         "type": "KatexService",
                         "deprecated": false,
                         "deprecationMessage": "",
                         "tagName": {
-                            "text": "param"
+                            "pos": 946,
+                            "end": 951,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 79,
+                            "escapedText": "param"
+                        },
+                        "comment": "<p>the katex service (injected)</p>\n",
+                        "typeExpression": {
+                            "pos": 952,
+                            "end": 966,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 307,
+                            "type": {
+                                "pos": 953,
+                                "end": 965,
+                                "flags": 4194304,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 1,
+                                "kind": 177,
+                                "typeName": {
+                                    "pos": 953,
+                                    "end": 965,
+                                    "flags": 4194304,
+                                    "modifierFlagsCache": 0,
+                                    "transformFlags": 0,
+                                    "kind": 79,
+                                    "escapedText": "KatexService"
+                                }
+                            }
                         }
                     }
                 ]
@@ -306,7 +619,7 @@
         },
         {
             "name": "ExpressionComponent",
-            "id": "component-ExpressionComponent-15fd704c761be7435bee25e66bf291e7c1a332809438c3f1428ac192ac5ba59e17c31006725c4c243f53761376be2a609957cad3832525edc948e7025a6ffda3",
+            "id": "component-ExpressionComponent-cab61cf52b3c3c738d4a46faeb60965d47682f315033e87fb7b562bd949951f0c85692d963acb96c89dbeaecd8be029336ef32f1fddee73ddfc4e8575a970381",
             "file": "projects/trailblazing/rich-text-ui/src/lib/expression/expression.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -328,7 +641,9 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "rawdescription": "\n\nThe content of the expression, excluding the delimiters such as `$`, `$$`, `\\(`, `\\)`, `\\[` and `\\]`.\n",
+                    "description": "<p>The content of the expression, excluding the delimiters such as <code>$</code>, <code>$$</code>, <code>\\(</code>, <code>\\)</code>, <code>\\[</code> and <code>\\]</code>.</p>\n",
+                    "line": 22,
                     "type": "string",
                     "decorators": []
                 },
@@ -337,7 +652,9 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "rawdescription": "\n\nEnabling debug mode in which the error message will be printed out in case of math syntax errors\n",
+                    "description": "<p>Enabling debug mode in which the error message will be printed out in case of math syntax errors</p>\n",
+                    "line": 32,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -346,7 +663,9 @@
                     "defaultValue": "undefined",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "rawdescription": "\n\nThe options for rendering the expression\n",
+                    "description": "<p>The options for rendering the expression</p>\n",
+                    "line": 27,
                     "type": "any",
                     "decorators": []
                 }
@@ -354,23 +673,26 @@
             "outputsClass": [
                 {
                     "name": "error",
-                    "defaultValue": "new EventEmitter<any>(true)",
+                    "defaultValue": "new EventEmitter<any>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "rawdescription": "\n\nThe event that will be emitted in case of errors\n",
+                    "description": "<p>The event that will be emitted in case of errors</p>\n",
+                    "line": 37,
                     "type": "EventEmitter"
                 }
             ],
             "propertiesClass": [
                 {
                     "name": "defaultOptions",
-                    "defaultValue": "{ output: 'html' }",
+                    "defaultValue": "{ output: 'html', displayMode: false }",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "any",
                     "optional": false,
-                    "description": "",
-                    "line": 10
+                    "description": "<p>The default options for expression rendering</p>\n",
+                    "line": 17,
+                    "rawdescription": "\n\nThe default options for expression rendering\n"
                 }
             ],
             "methodsClass": [
@@ -387,18 +709,35 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 43,
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "rawdescription": "\n\nThe internal error handler of the expression. This handler will emit an event to parent component\n",
+                    "description": "<p>The internal error handler of the expression. This handler will emit an event to parent component</p>\n",
                     "jsdoctags": [
                         {
-                            "name": "error",
+                            "name": {
+                                "pos": 1146,
+                                "end": 1151,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "error"
+                            },
                             "type": "any",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
-                                "text": "param"
-                            }
+                                "pos": 1140,
+                                "end": 1145,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "param"
+                            },
+                            "comment": "<p>describe the error in details with <code>toString</code></p>\n"
                         }
                     ]
                 }
@@ -407,10 +746,10 @@
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
+            "description": "<p>This is mathematical expression component.\nThe expression could be either inline within a paragraph or separated as a new paragraph</p>\n",
+            "rawdescription": "\n\nThis is mathematical expression component.\nThe expression could be either inline within a paragraph or separated as a new paragraph\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, Output, } from '@angular/core';\n\n@Component({\n  selector: 'nt-expression',\n  templateUrl: './expression.component.html',\n  styleUrls: [ './expression.component.css' ],\n})\nexport class ExpressionComponent  {\n\n  defaultOptions: any = { output: 'html' };\n\n  @Input() content: string = '';\n  @Input() options?: any = undefined;\n  @Input() debug = false;\n  @Output() error = new EventEmitter<any>(true);\n\n  onError(error: any) {\n    this.error.emit(error);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, Output, } from '@angular/core';\n\n/**\n * This is mathematical expression component.\n * The expression could be either inline within a paragraph or separated as a new paragraph\n */\n@Component({\n  selector: 'nt-expression',\n  templateUrl: './expression.component.html',\n  styleUrls: [ './expression.component.css' ],\n})\nexport class ExpressionComponent  {\n\n  /**\n   * The default options for expression rendering\n   */\n  defaultOptions: any = { output: 'html', displayMode: false };\n\n  /**\n   * The content of the expression, excluding the delimiters such as `$`, `$$`, `\\(`, `\\)`, `\\[` and `\\]`.\n   */\n  @Input() content: string = '';\n\n  /**\n   * The options for rendering the expression\n   */\n  @Input() options?: any = undefined;\n\n  /**\n   * Enabling debug mode in which the error message will be printed out in case of math syntax errors\n   */\n  @Input() debug = false;\n\n  /**\n   * The event that will be emitted in case of errors\n   */\n  @Output() error = new EventEmitter<any>();\n\n  /**\n   * The internal error handler of the expression. This handler will emit an event to parent component\n   * @param error describe the error in details with `toString`\n   */\n  onError(error: any) {\n    this.error.emit(error);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -423,7 +762,7 @@
         },
         {
             "name": "ParagraphComponent",
-            "id": "component-ParagraphComponent-f516b8098eee42eb512e32cb7fa7d83ec2148b03a2323bb8d618891c98be720789c7431a65f48374c488635f3fe725b85f214d3a6cd535587f76bbfd7997ac2b",
+            "id": "component-ParagraphComponent-7749dc0d14a4c822c772819f43172e9035c82e354edcd4653ce066072529f4ecb01f897bb88581ee2bead44bc3c7c6dac1923a040a20aa6fee954624f62bd2eb",
             "file": "projects/trailblazing/rich-text-ui/src/lib/paragraph/paragraph.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -445,7 +784,9 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "rawdescription": "\n\nThe raw content of the paragraph\n",
+                    "description": "<p>The raw content of the paragraph</p>\n",
+                    "line": 22,
                     "type": "string",
                     "decorators": []
                 },
@@ -454,7 +795,9 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "rawdescription": "\n\nEnabling debug mode in which the error message will be printed out in case of math syntax errors\n",
+                    "description": "<p>Enabling debug mode in which the error message will be printed out in case of math syntax errors</p>\n",
+                    "line": 27,
                     "type": "boolean",
                     "decorators": []
                 }
@@ -465,7 +808,9 @@
                     "defaultValue": "new EventEmitter<any>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "rawdescription": "\n\nThe event that will be emitted in case of errors\n",
+                    "description": "<p>The event that will be emitted in case of errors</p>\n",
+                    "line": 32,
                     "type": "EventEmitter<any>"
                 }
             ],
@@ -475,10 +820,11 @@
                     "defaultValue": "[]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Segment[]",
+                    "type": "any[]",
                     "optional": false,
-                    "description": "",
-                    "line": 11
+                    "description": "<p>The internal chunks extracted from the content</p>\n",
+                    "line": 17,
+                    "rawdescription": "\n\nThe internal chunks extracted from the content\n"
                 }
             ],
             "methodsClass": [
@@ -488,19 +834,21 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 18,
+                    "line": 37,
                     "deprecated": false,
-                    "deprecationMessage": ""
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nThe internal processing of property changes\n",
+                    "description": "<p>The internal processing of property changes</p>\n"
                 }
             ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
+            "description": "<p>This is a rich paragraph which may contain mathematical expressions, image, text, and so on.</p>\n",
+            "rawdescription": "\n\nThis is a rich paragraph which may contain mathematical expressions, image, text, and so on.\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';\nimport { extractMath, Segment } from \"extract-math\";\n\n@Component({\n  selector: 'nt-paragraph',\n  templateUrl: './paragraph.component.html',\n  styleUrls: ['./paragraph.component.css']\n})\nexport class ParagraphComponent implements OnChanges {\n\n  chunks: Segment[] = [];\n  @Input() content: string = '';\n  @Input() debug: boolean = false;\n  @Output() error: EventEmitter<any> = new EventEmitter<any>();\n\n  constructor() { }\n\n  ngOnChanges(): void {\n    this.chunks = extractMath(this.content);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnChanges, Output } from '@angular/core';\nimport { extractMath } from \"extract-math\";\n\n/**\n * This is a rich paragraph which may contain mathematical expressions, image, text, and so on.\n */\n@Component({\n  selector: 'nt-paragraph',\n  templateUrl: './paragraph.component.html',\n  styleUrls: ['./paragraph.component.css']\n})\nexport class ParagraphComponent implements OnChanges {\n\n  /**\n   * The internal chunks extracted from the content\n   */\n  chunks: any[] = [];\n\n  /**\n   * The raw content of the paragraph\n   */\n  @Input() content: string = '';\n\n  /**\n   * Enabling debug mode in which the error message will be printed out in case of math syntax errors\n   */\n  @Input() debug: boolean = false;\n\n  /**\n   * The event that will be emitted in case of errors\n   */\n  @Output() error: EventEmitter<any> = new EventEmitter<any>();\n\n  /**\n   * The internal processing of property changes\n   */\n  ngOnChanges(): void {\n    this.chunks = extractMath(this.content);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -509,14 +857,6 @@
                 }
             ],
             "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 14
-            },
             "implements": [
                 "OnChanges"
             ],
@@ -705,21 +1045,21 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
-            },
-            {
-                "name": "environment",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "InlineExpression",
@@ -968,18 +1308,6 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -990,6 +1318,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/rich-text/paragraph.stories.ts": [
@@ -1064,7 +1404,7 @@
         ]
     },
     "coverage": {
-        "count": 0,
+        "count": 16,
         "status": "low",
         "files": [
             {
@@ -1072,36 +1412,36 @@
                 "type": "directive",
                 "linktype": "directive",
                 "name": "KatexDirective",
-                "coveragePercent": 0,
-                "coverageCount": "0/8",
-                "status": "low"
+                "coveragePercent": 75,
+                "coverageCount": "6/8",
+                "status": "good"
             },
             {
                 "filePath": "projects/trailblazing/rich-text-ui/src/lib/expression/expression.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ExpressionComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/7",
-                "status": "low"
+                "coveragePercent": 100,
+                "coverageCount": "7/7",
+                "status": "very-good"
             },
             {
                 "filePath": "projects/trailblazing/rich-text-ui/src/lib/paragraph/paragraph.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ParagraphComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/7",
-                "status": "low"
+                "coveragePercent": 100,
+                "coverageCount": "6/6",
+                "status": "very-good"
             },
             {
                 "filePath": "projects/trailblazing/rich-text-ui/src/lib/services/katex.service.ts",
                 "type": "injectable",
                 "linktype": "injectable",
                 "name": "KatexService",
-                "coveragePercent": 0,
-                "coverageCount": "0/3",
-                "status": "low"
+                "coveragePercent": 100,
+                "coverageCount": "3/3",
+                "status": "very-good"
             },
             {
                 "filePath": "projects/trailblazing/rich-text-ui/src/test.ts",
