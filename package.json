@@ -24,6 +24,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@storybook/theming": "^6.4.9",
     "@trailblazing/rich-text-ui": "./projects/trailblazing/rich-text-ui",
     "jest": "^27.4.3",
     "junit": "^1.4.9",
