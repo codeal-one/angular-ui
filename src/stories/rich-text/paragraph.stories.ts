@@ -8,6 +8,9 @@ export default {
   title: '@Trailblazing/RichText/Paragraph',
   component: ParagraphComponent,
   argTypes: {
+    chunks: { defaultValue: [], table: { disable: true } },
+    error: { control: false },
+    ngOnChanges: { table: { disable: true } }
   },
   decorators: [
     moduleMetadata({
