@@ -110,7 +110,7 @@
       "projectType": "library",
       "root": "projects/trailblazing/rich-text-ui",
       "sourceRoot": "projects/trailblazing/rich-text-ui/src",
-      "prefix": "lib",
+      "prefix": "nt",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

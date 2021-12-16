@@ -1,13 +1,16 @@
 import { Story, Meta } from '@storybook/angular/types-6-0';
 import { moduleMetadata } from "@storybook/angular";
-import { ExpressionComponent } from "../../projects/trailblazing/rich-text-ui/src/lib/expression/expression.component";
-import { KatexDirective } from "../../projects/trailblazing/rich-text-ui/src/lib/directives/katex.directive";
-import { ParagraphComponent } from "../../projects/trailblazing/rich-text-ui/src/lib/paragraph/paragraph.component";
+import { ExpressionComponent } from "../../../projects/trailblazing/rich-text-ui/src/lib/expression/expression.component";
+import { KatexDirective } from "../../../projects/trailblazing/rich-text-ui/src/lib/directives/katex.directive";
+import { ParagraphComponent } from "../../../projects/trailblazing/rich-text-ui/src/lib/paragraph/paragraph.component";
 
 export default {
-  title: 'Trailblazing/Paragraph',
+  title: '@Trailblazing/RichText/Paragraph',
   component: ParagraphComponent,
   argTypes: {
+    chunks: { defaultValue: [], table: { disable: true } },
+    error: { control: false },
+    ngOnChanges: { table: { disable: true } }
   },
   decorators: [
     moduleMetadata({

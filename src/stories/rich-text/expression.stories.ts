@@ -3,13 +3,12 @@ import { moduleMetadata } from "@storybook/angular";
 import { KatexDirective, ExpressionComponent } from "@trailblazing/rich-text-ui";
 
 export default {
-  title: 'Trailblazing/Expression',
+  title: '@Trailblazing/RichText/Expression',
   component: ExpressionComponent,
   argTypes: {
-    debug: {
-      name: 'debug',
-      description: 'Enable claiming message in case of errors',
-    }
+    defaultOptions: { control: false },
+    error: { control: false },
+    onError: { table: { disable: true } }
   },
   decorators: [
     moduleMetadata({
