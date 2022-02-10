@@ -28,7 +28,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
-    "@trailblazing/rich-text-ui": "link:./projects/trailblazing/rich-text-ui",
+    "@trailblazing/rich-text-ui": "file:./projects/trailblazing/rich-text-ui",
     "jest": "^27.4.3",
     "junit": "^1.4.9",
     "karma-junit-reporter": "^2.0.1",
