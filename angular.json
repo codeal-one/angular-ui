@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "trailblazing-ui": {
+    "angular-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/trailblazing-ui",
+            "outputPath": "dist/angular-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "trailblazing-ui:build:production"
+              "browserTarget": "angular-ui:build:production"
             },
             "development": {
-              "browserTarget": "trailblazing-ui:build:development"
+              "browserTarget": "angular-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "trailblazing-ui:build"
+            "browserTarget": "angular-ui:build"
           }
         },
         "test": {
@@ -105,38 +105,7 @@
           }
         }
       }
-    },
-    "@trailblazing/rich-text-ui": {
-      "projectType": "library",
-      "root": "projects/trailblazing/rich-text-ui",
-      "sourceRoot": "projects/trailblazing/rich-text-ui/src",
-      "prefix": "nt",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/trailblazing/rich-text-ui/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/trailblazing/rich-text-ui/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/trailblazing/rich-text-ui/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/trailblazing/rich-text-ui/src/test.ts",
-            "tsConfig": "projects/trailblazing/rich-text-ui/tsconfig.spec.json",
-            "karmaConfig": "projects/trailblazing/rich-text-ui/karma.conf.js"
-          }
-        }
-      }
     }
   },
-  "defaultProject": "trailblazing-ui"
+  "defaultProject": "angular-ui"
 }

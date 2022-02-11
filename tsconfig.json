@@ -2,12 +2,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "@trailblazing/rich-text-ui": [
-        "dist/trailblazing/rich-text-ui/trailblazing-rich-text-ui",
-        "dist/trailblazing/rich-text-ui"
-      ]
-    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
