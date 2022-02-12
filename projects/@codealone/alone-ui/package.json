@@ -1,6 +1,8 @@
 {
   "name": "@codealone/alone-ui",
   "version": "0.0.1",
+  "author": "Codeal~One <me@codeal.one> (https://codeal.one)",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
