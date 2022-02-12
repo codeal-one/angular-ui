@@ -8,9 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test-headless": "ng test --karmaConfig=karma-headless.conf.js --code-coverage true",
-    "prebuild-lib": "cd projects/$npm_config_lib; npm i",
-    "build-lib": "ng build $npm_config_lib",
-    "postbuild-lib": "ng add --skip-confirmation dist/$npm_config_lib"
+    "prebuild-lib": "cd projects/codealone/$npm_config_lib; npm i",
+    "build-lib": "ng build @codealone/$npm_config_lib",
+    "postbuild-lib": "ng add --skip-confirmation dist/@codealone/$npm_config_lib"
   },
   "private": true,
   "dependencies": {

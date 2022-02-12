@@ -3,7 +3,7 @@
 
 module.exports = function (config) {
   config.set({
-    basePath: 'projects/@codealone/alone-ui',
+    basePath: 'projects/codealone/alone-ui',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
@@ -26,7 +26,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './reports/coverage/@codealone/alone-ui'),
+      dir: require('path').join(__dirname, './reports/coverage/codealone/alone-ui'),
       subdir: '.',
       reporters: [
         { type: 'html' },
