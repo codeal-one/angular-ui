@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@codealone/rich-text": [
+        "dist/@codealone/rich-text/codealone-rich-text",
+        "dist/@codealone/rich-text"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

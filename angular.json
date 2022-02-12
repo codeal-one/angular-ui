@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "@codealone/rich-text": {
+      "projectType": "library",
+      "root": "projects/codealone/rich-text",
+      "sourceRoot": "projects/codealone/rich-text/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/codealone/rich-text/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/codealone/rich-text/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/codealone/rich-text/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/codealone/rich-text/src/test.ts",
+            "tsConfig": "projects/codealone/rich-text/tsconfig.spec.json",
+            "karmaConfig": "projects/codealone/rich-text/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-ui"
