@@ -7,9 +7,13 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test-headless": "ng test --karmaConfig=karma-headless.conf.js --code-coverage true",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook -o dist/sb"
+    "build-storybook": "npm run docs:json && build-storybook -o dist/sb",
+    "prebuild-lib": "cd projects/$npm_config_lib && npm install",
+    "build-lib": "npm run build $npm_config_lib",
+    "publish": "cd dist/$npm_config_lib && npm publish --access=public"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +26,7 @@
     "@angular/platform-browser-dynamic": "~13.2.2",
     "@angular/router": "~13.2.2",
     "@storybook/cli": "^6.4.18",
+    "karma-junit-reporter": "^2.0.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -47,6 +52,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^13.0.0",
     "typescript": "~4.4.3"
   }
 }
