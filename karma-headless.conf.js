@@ -3,11 +3,12 @@
 
 module.exports = function (config) {
   config.set({
-    basePath: '',
+    basePath: 'projects/@codealone/alone-ui',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
+      require('karma-junit-reporter'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma')
@@ -25,20 +26,36 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../../coverage/@codealone/alone-ui'),
+      dir: require('path').join(__dirname, './reports/coverage/@codealone/alone-ui'),
       subdir: '.',
       reporters: [
         { type: 'html' },
         { type: 'text-summary' }
       ]
     },
-    reporters: ['progress', 'kjhtml'],
+    junitReporter: {
+      outputDir: require('path').join(__dirname, './reports/junit'),
+      useBrowserName: false,
+      xmlVersion: 1
+    },
+    customLaunchers: {
+      HeadlessChrome: {
+        base: 'ChromeHeadless',
+        flags: [
+          '--no-sandbox',
+          '--disable-gpu',
+          '--remote-debugging-port-9222'
+        ]
+      }
+    },
+    reporters: ['progress', 'kjhtml', 'junit'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['Chrome'],
-    singleRun: false,
-    restartOnFileChange: true
+    autoWatch: false,
+    browsers: ['HeadlessChrome'],
+    concurrency: 1,
+    singleRun: true,
+    restartOnFileChange: false
   });
 };

@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "cd projects/@codealone/alone-ui && npm install"
+    "test-headless": "ng test --karmaConfig=karma-headless.conf.js --code-coverage true",
+    "prebuild-lib": "cd projects/$npm_config_lib; npm i",
+    "build-lib": "ng build $npm_config_lib",
+    "postbuild-lib": "ng add --skip-confirmation dist/$npm_config_lib"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +22,7 @@
     "@angular/platform-browser": "~13.2.2",
     "@angular/platform-browser-dynamic": "~13.2.2",
     "@angular/router": "~13.2.2",
+    "karma-junit-reporter": "^2.0.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

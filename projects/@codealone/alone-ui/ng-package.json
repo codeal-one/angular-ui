@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/codealone/alone-ui",
+  "dest": "../../../dist/@codealone/alone-ui",
   "lib": {
     "entryFile": "src/public-api.ts"
   }
