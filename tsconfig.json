@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@codealone/alone-ui": [
+        "dist/codealone/alone-ui/codealone-alone-ui",
+        "dist/codealone/alone-ui"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
