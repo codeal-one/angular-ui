@@ -7,19 +7,21 @@ export default {
   component: OneIconComponent,
   parameters: { controls: { sort: 'requiredFirst' } },
   argTypes: {
-    backgroundColor: { control: 'color' },
     ngOnChanges: { table: { disable: true } },
     classes: { table: { disable: true } },
   }
 } as Meta;
 
 const IconStoryTemplate: Story<OneIconComponent> = (args: OneIconComponent) => ({
-  props: args
+  props: {
+    ...args,
+    classes: ['fa', `fa-${args.faIcon}`]
+  }
 });
 
 export const HomeIcon = IconStoryTemplate.bind({});
 HomeIcon.args = {
-  faIcon: 'home',
+  faIcon: 'home'
 };
 
 export const CloseIcon = IconStoryTemplate.bind({});
