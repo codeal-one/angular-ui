@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import { OneIconComponent } from './one-icon.component';
 
 export default {
-  title: 'One-Ui/Icon',
+  title: 'One-Ui/Basics/Icon',
   component: OneIconComponent,
   parameters: { controls: { sort: 'requiredFirst' } },
   argTypes: {
